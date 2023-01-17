@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+.container{
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*
+navbar
+*/
+.navbar{
+  padding: 3% 0;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  
+}
+.nav-logo span{
+  color: #FF6851;
+}
+.nav-item ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-item li a{
+  text-decoration: none;
+  color: #000;
+  margin: 0 20px;
+}
+.nav-icon button{
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+}
+i{
+  font-size: 1.2rem;
+}
+#value-btn{
+  border: none;
+  outline: none;
+  background-color: #FF6161;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+#value-btn:hover{
+  background-color: #FF0000;
+}
+/*
+hiro
+*/
+.hiro{
+  padding: 5% 0;
+}
+.bg-size{
+  background-color: #F9D5FF;
+  margin-top: 50px;
+  border-radius: 40px;
+}
+.hiro-teks input{
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 30px;
+}
+.hiro-teks h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.hiro-teks{
+  width: 30%;
+  margin-left: 50px;
+}
+.hiro-image{
+  width: 40%;
+  padding: 10px;
+}
+.hiro-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hiro-icon img{
+  width: 100%;
+  border-radius: 10px 10px 40px 10px;
+}
+.hiro-icon{
+  width: 10%;
+  margin-bottom: -80px;
+}
+.hiro-icon i{
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*
+btn product
+*/
+.btn-product button{
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.active{
+  color: #FF5252;
+}
+
+
+
+/*
+products
+*/
+#product{
+  padding: 20px;
+}
+.card {
+  float: left;
+  width: 33%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+#product:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img-container img{
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.teks-five{
+  font-size: 1.3rem;
+}
+.img-container h6{
+  font-size: 1rem;
+}
+.img-container{
+  padding: 10px;
+}
+
+.hide{
+  display: none;
+}

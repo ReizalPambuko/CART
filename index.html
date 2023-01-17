@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <section class="navbar">
+    <div class="container">
+      <div class="d-flex">
+        <div class="nav-logo">
+          <h2><span>R</span>-shop</h2>
+        </div>
+        <div class="nav-item">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-icon">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button><i class="fa-solid fa-heart"></i></button>
+          <button><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end navbar -->
+
+  
+  <!-- hiro -->
+  <section class="hiro">
+    <div class="container bg-size">
+      <div class="d-flex">
+        <div class="hiro-teks">
+          <h2>Get the best product at your home</h2>
+          
+            <input 
+            type="text"
+            id="inputV"
+            placeholder="Search your favorite product"
+            >
+    
+          <button id="value-btn">Cari</button>
+        </div>
+        <div class="hiro-image">
+          <img src="./image/1.jpg" alt="">
+        </div>
+        <div class="hiro-icon">
+          <i class="fa-brands fa-instagram"></i>
+          <br>
+          <i class="fa-brands fa-facebook"></i>
+          <br>
+          <i class="fa-brands fa-twitter"></i>
+          <br>
+          <img src="./image/2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hiro-->
+  <!-- button product -->
+   <section class="search-product">
+     <div class="container">
+       <div class="d-flex">
+         <div class="btn-product">
+           <button class="value-btn" onclick="productt('semua')">Semua</button>
+           <button class="value-btn" onclick="productt('baju')">Baju</button>
+           <button class="value-btn" onclick="productt('celana')">Celana</button>
+           <button class="value-btn" onclick="productt('jaket')">Jaket</button>
+           <button class="value-btn" onclick="productt('jam')">Jam tangan</button>
+         </div>
+         <div class="btn-icon">
+           
+         </div>
+       </div>
+     </div>
+   </section>
+  <!-- end -->
+  <section class="products">
+    <div class="container">
+      <div id="product"></div>
+    </div>
+  </section>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
