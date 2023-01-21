@@ -16,13 +16,13 @@ const product = {
     "namaProduct": "Baju polos putih",
     "category": "baju",
     "price": "100.000",
-    "image": "./image/13.jpg",
+    "image": "./image/14.jpg",
   },
   {
     "namaProduct": "Celana cowo",
     "category": "celana",
     "price": "190.000",
-    "image": "./image/14.jpg",
+    "image": "./image/13.jpg",
   },
   {
     "namaProduct": "Jam Rolex",
@@ -48,7 +48,7 @@ for(let i of product.data){
   
   const imgContainer = document.createElement("img");
   imgContainer.setAttribute("src",i.image);
-  
+  imgContainer.classList.add('images')
   
  container.appendChild(imgContainer);
  card.appendChild(container);
@@ -62,12 +62,59 @@ for(let i of product.data){
   harga.innerHTML = "Rp " + i.price;
   container.appendChild(harga)
   
+  let cart = document.createElement('button');
+  cart.textContent = 'Add Cart';
+  cart.classList.add('cartt');
+  container.appendChild(cart)
   
   
   document.getElementById("product").appendChild(card);
   
+  
+  
+  
+  const keranjang = document.querySelector('.keranjang');
+
+  cart.addEventListener('click',function(){
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    const images = document.createElement('img');
+    images.classList.add('img-item')
+    images.setAttribute('src',i.image);
+    cartItem.appendChild(images);
+    
+    const productContent = document.createElement('div');
+    productContent.classList.add('product-content');
+    
+    
+    const itemTeks = document.createElement('h4');
+    itemTeks.classList.add('item-teks');
+    itemTeks.innerHTML = i.namaProduct;
+    productContent.appendChild(itemTeks);
+    
+    const hargaProduct = document.createElement('p');
+    hargaProduct.innerHTML = i.price;
+    productContent.appendChild(hargaProduct)
+    
+    cartItem.appendChild(productContent)
+    
+   keranjang.appendChild(cartItem);
+  
+  })
+  
 }
 
+const kr = document.querySelector('.keranjang')
+const bt = document.querySelector('.bt');
+
+bt.addEventListener('click',function(){
+  kr.classList.add('act')
+})
+
+const closee = document.querySelector('.closee');
+closee.addEventListener('click',function(){
+  kr.classList.remove('act')
+})
 
 function productt(value) {
   const valueBtn = document.querySelectorAll(".value-btn");
@@ -84,6 +131,7 @@ function productt(value) {
   let cards = document.querySelectorAll(".card");
   
   cards.forEach(cr => {
+  
     if (value == 'semua'){
       cr.classList.remove('hide')
     }
@@ -115,6 +163,24 @@ document.querySelector("#value-btn").addEventListener("click",function(){
 })
 
 
+
 window.onload = () => {
   productt("semua");
 }
+
+let carts = document.querySelector('.carts');
+const cartt = document.querySelectorAll('.cartt');
+
+let count = 0;
+cartt.forEach(cartt => {
+  cartt.addEventListener('click',function(){
+    
+    count += 1;
+    carts.innerHTML = count;
+    
+  })
+})
+
+
+//ketika tombol diklik masukkan keranjangl
+  

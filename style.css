@@ -24,6 +24,7 @@ navbar
   background-color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 99999;
   
 }
 .nav-logo span{
@@ -62,6 +63,19 @@ i{
 }
 #value-btn:hover{
   background-color: #FF0000;
+}
+.carts{
+  background-color: #FF0404;
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.9;
+}
+.bt{
+  position: relative;
 }
 /*
 hiro
@@ -156,7 +170,7 @@ products
   border-radius: 20px;
 }
 .teks-five{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .img-container h6{
   font-size: 1rem;
@@ -167,4 +181,72 @@ products
 
 .hide{
   display: none;
+}
+
+
+
+
+.cartt{
+  border: none;
+  outline: none;
+  background-color: #FF5B5B;
+  padding: 13px 30px;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all .1s;
+}
+.cartt:hover{
+  background-color: #FD0000;
+  font-weight: bold;
+}
+
+
+.yourCart{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.closee{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/*
+keranjanh
+*/
+.keranjang{
+  position: absolute;
+  top: 120px;
+  right: 100%;
+  width: 40%;
+  background-color: #2A2A2B;
+  color: #fff;
+  padding: 30px;
+  transition: .1s;
+  z-index: 99;
+  border-radius: 8px;
+  box-shadow: 0 20px 30px rgba(0,0,0,.4);
+}
+.img-item{
+  width: 30%;
+  margin-top: 10px;
+  
+}
+.cart-item{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.act{
+  right: 0;
+}
+.product-content{
+  width: 100%;
+  margin-left: 90px;
 }
